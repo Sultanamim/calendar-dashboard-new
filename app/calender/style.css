@@ -1,0 +1,58 @@
+.main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin-left: 12.3rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 40px 20px;
+  color: #000;
+}
+button.btn-primary {
+  background-color: blue;
+}
+button.btn-secondary {
+  background-color: gray;
+}
+/*  ---- Modal ---- */
+
+.modal {
+  top: 7rem;
+  position: absolute;
+  color: #000;
+}
+.modal .modal-content {
+  width: 60%;
+}
+.modal .modal-content .modal-header {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+.modal .modal-content .modal-header button {
+  display: none;
+}
+.modal .modal-header .modal-title {
+  text-align: center;
+}
+.modal .modal-content .modal-body {
+  border: none;
+  text-align: center;
+}
+.modal .modal-content .modal-footer {
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.employee-event-style {
+  background-color: "white";
+  color: "#000";
+  margin: "10px";
+  border: 1px dashed #eee;
+  border-radius: "8px";
+}

@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 250, 250, 250;
+  --background-start-rgb: 5, 68, 168;
+  --background-end-rgb: 66, 135, 245;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 250, 250, 250;
+    --background-start-rgb: 5, 68, 168;
+    --background-end-rgb: 66, 135, 245;
   }
 }
 
@@ -24,4 +24,128 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+.__className_e66fe9 button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  /* -webkit-appearance: button; */
+  /* background-color: transparent; */
+  background-image: none;
+}
+
+/*--------------- Calender Css ------------*/
+.main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin-left: 12.3rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 40px 20px;
+  color: #000;
+}
+
+input {
+  @apply px-2;
+}
+.fc-header-toolbar {
+  display: inline-block;
+  padding: 4px 4px;
+
+  @apply space-x-8;
+}
+
+.fc-day {
+  @apply m-8;
+}
+
+.fc-scrollgrid-sync-table {
+  @apply w-full;
+}
+
+.fc-view {
+  @apply w-full h-full lg:h-2/3 xl:h-2/3 bg-white;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  @apply bg-violet-100;
+}
+
+.fc .fc-button {
+  @apply bg-violet-800 hover:bg-violet-900;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+  @apply bg-violet-600;
+}
+
+.fc .fc-button-primary:disabled {
+  @apply bg-violet-600;
+}
+.fc-v-event {
+  @apply bg-violet-500 border border-violet-600;
+}
+
+.fc-daygrid-day-events .fc-daygrid-event-harness .fc-h-event {
+  display: flex;
+  background-color: lightsteelblue;
+  width: max-content;
+  height: 40px;
+  color: #000;
+  border: 1px dashed #eee;
+  border-radius: 3px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.fc-daygrid-day-events
+  .fc-daygrid-event-harness
+  .fc-h-event
+  .fc-event-title-container {
+  display: flex;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+}
+.fc-daygrid-day-events .fc-daygrid-event-harness .fc-h-event .fc-event-title {
+  color: #ffffff;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+}
+
+/*  ---- Modal ---- */
+
+.modal {
+  top: 7rem;
+  position: absolute;
+  color: #000;
+}
+.modal .modal-content {
+  width: 60%;
+}
+.modal .modal-content .modal-header {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+.modal .modal-content .modal-header button {
+  display: none;
+}
+.modal .modal-header .modal-title {
+  text-align: center;
+}
+.modal .modal-content .modal-body {
+  border: none;
+  text-align: center;
+}
+.modal .modal-content .modal-footer {
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.modal .modal-content .modal-footer .btn-primary {
+  background-color: blue;
 }
