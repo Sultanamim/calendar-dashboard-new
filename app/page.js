@@ -3,10 +3,15 @@ import Image from "next/image";
 export default function home() {
   return (
     <main
-      className="flex min-h-screen flex-col items-center justify-between p-24"
+      className="flex min-h-screen flex-col items-center"
       style={{
-        marginLeft: "20rem",
+        marginLeft: "12.3rem",
+        marginRight: "2rem",
         marginTop: "2rem",
+        backgroundColor: "#fff",
+        borderRadius: "8px",
+        padding: "40px 20px",
+        color: "#000",
       }}
     >
       <div
